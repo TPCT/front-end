@@ -1,0 +1,8 @@
+.confirm .label{
+    font-size: 2.5vmin;
+}
+
+.confirm{
+    padding: 4vmin;
+    min-width: 300px;
+}
