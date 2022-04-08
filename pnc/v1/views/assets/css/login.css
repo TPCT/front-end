@@ -1,0 +1,160 @@
+.card-header {
+    background-color: #369;
+    color: white;
+    font-weight: 700;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+}
+
+.form-label {
+    font-weight: bold;
+    color: black;
+}
+
+.sign-in-button {
+    padding: 5px 50px;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: rgb(230, 230, 230);
+}
+
+.alert{
+    padding: 10px
+}
+
+.alert-header{
+    font-weight: bolder;
+    align-items: center;
+    font-size: 0.7rem;
+}
+.alert-content{
+    align-items: center;
+    padding-top: 10px;
+    word-wrap: break-word;
+    color: black;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Amarante";
+}
+
+body{
+    padding: 20px;
+    background: #369 url('https://www.onlinebanking.pnc.com/Images2/wrapper/bg_fade.png') top repeat-x;
+}
+
+.content-container{
+    font-weight: bolder;
+    font-size: 0.6rem;
+    border-radius: 20px;
+    margin: 0 auto;
+    color: rgb(15, 106, 172);
+    box-shadow: 0px 0px 5px 0.01px #bbb, 0 0 10px 0.5px black;
+    overflow: hidden;
+}
+
+.main-content{
+    max-width: 400px;
+}
+
+.header{
+    border-radius: 20px;
+    background-image: linear-gradient(white, rgb(235, 235, 235));
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 16px 15px;
+}
+.logo-container img{
+    background: url('assets/imgs/pnc-logo-rev.svg') no-repeat left;
+    width: 3rem;
+}
+
+.logo-container h1{
+    padding-left: 10px;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.logo-container h4{
+    padding-top: 12px;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.btns-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.btns-container a:hover{
+    color: black;
+}
+
+.btns-container div{
+    background-color: rgb(230, 230, 230);
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    left: -20px;
+    top: -1;
+    position: relative;
+    border: 1px solid #bbb;
+}
+
+.btns-container div:hover{
+    background-color: rgb(190, 190, 190);
+}
+
+.btns-container > div{
+    border-radius: 0 0 0 5px;
+}
+
+.btns-container > div ~ div{
+    border-radius: 0 0 5px 0;
+}
+
+.content{
+    overflow: hidden;
+    padding: 15px 0;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.content-title *{
+    color: #EA6C0B;
+    font-weight: 600;
+}
+
+.horizontal-separator{
+    margin-top: 30px;
+    border-top: 0.25px solid #bbb;
+}
+
+.footer{
+    padding-top: 10px;
+}
+
+.links *{
+    width: auto;
+    text-decoration: none;
+    font-size: 14px;
+    color:#369
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
