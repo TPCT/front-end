@@ -1,0 +1,137 @@
+.header{
+    display: flex;
+    background-color: #404e57;
+    min-height: 10vh;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.form-control{
+    height: 50px;
+    border-radius: 0;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-left: 0.3rem solid #f58025;
+}
+
+*{
+    margin: 0;
+}
+
+.header img{
+    height: 2em;
+}
+
+.content{
+    background-color: #2d3943;
+    border-top: 1px solid #f58025;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    padding: 50px;
+}
+
+.main-content{
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps{
+    border: 1px solid #404e57;
+    min-width: 350px;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.current{
+    border-top: 0.3rem solid #f58025;
+}
+
+.step{
+    padding: 20px;
+    color: #f58025;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.6em;
+}
+
+.step img{
+    max-height: 5vmin;
+}
+
+.horizontal-separator{
+    border-top: 1px solid white;
+    width: 100%;
+    height: 1px;
+}
+
+.footer{
+    border-top: 0.3rem solid #f58025;
+    background-color: #2d3943;
+    color: white;
+    min-height: 10vh;
+}
+
+.footer-link a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.hoverable:hover{
+    text-decoration: underline;
+}
+
+.logo-container{
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 20vh;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.logo-container .page-name{
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo-container .page-name h1{
+    text-shadow: 0 0 3px black;
+}
+
+.pnc-btn{
+    min-width: 200px;
+    background-color: #f58025;
+    border-radius: 0;
+    outline: none;
+}
+
+.pnc-btn:focus{
+    box-shadow: none;
+}
+
+.pnc-btn:hover{
+    border-bottom: 0.3rem solid #404e57;
+    background-color: #f58025;
+}
+
+.invalid-input{
+    border-left: 0.3rem solid red;
+    outline: 1px solid red;
+}
