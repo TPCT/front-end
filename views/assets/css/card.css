@@ -1,0 +1,299 @@
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
+.ccicon {
+    height: 32px;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 16px);
+    width: 60px;
+}
+
+#ccsingle {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+#ccsingle svg {
+    width: 160px;
+    max-height: 50px;
+}
+
+.credit-card svg#cardfront,
+.credit-card svg#cardback {
+    -webkit-box-shadow: 0 0 10px 0px black;
+    box-shadow: 0 0 10px 0px black;
+    border-radius: 22px;
+}
+
+
+/* CHANGEABLE CARD ELEMENTS */
+.credit-card .lightcolor,
+.credit-card .darkcolor {
+    -webkit-transition: fill .5s;
+    transition: fill .5s;
+}
+
+.credit-card .mastercard {
+    fill: #ff5f00;
+}
+
+.credit-card .mastercarddark {
+    fill: #eb5801;
+}
+
+.credit-card .red {
+    fill: #ef5350;
+}
+
+.credit-card .reddark {
+    fill: #d32f2f;
+}
+
+.credit-card .discover {
+    fill: #4d4d4d;
+}
+
+.credit-card .discoverdark {
+    fill: #f47216;
+}
+
+.credit-card .cyan {
+    fill: #26c6da;
+}
+
+.credit-card .cyandark {
+    fill: #0097a7;
+}
+
+.credit-card .green {
+    fill: #66bb6a;
+}
+
+.credit-card .greendark {
+    fill: #388e3c;
+}
+
+
+.credit-card .yellow {
+    fill: #ffeb3b;
+}
+
+.credit-card .yellowdark {
+    fill: #f9a825;
+}
+
+.credit-card .orange {
+    fill: #ff9800;
+}
+
+.credit-card .orangedark {
+    fill: #ef6c00;
+}
+
+.credit-card .grey {
+    fill: #bdbdbd;
+}
+
+.credit-card .greydark {
+    fill: #616161;
+}
+.credit-card .visa {
+    fill: #0E4595;
+}
+.credit-card .visadark {
+    fill: #1A1F71;
+}
+.credit-card .amex {
+    fill: #1B2954;
+}
+.credit-card .amexdark {
+    fill: #19264e;
+}
+
+.credit-card .default {
+    fill: #414e58;
+}
+.credit-card .defaultdark {
+    fill: #f48126;
+}
+/* FRONT OF CARD */
+#svgname {
+    text-transform: uppercase;
+}
+
+#cardfront .st2 {
+    fill: #FFFFFF;
+}
+
+#cardfront .st3 {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+}
+
+#cardfront .st4 {
+    font-size: 54.7817px;
+}
+
+#cardfront .st5 {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400;
+}
+
+#cardfront .st6 {
+    font-size: 33.1112px;
+}
+
+#cardfront .st7 {
+    opacity: 0.6;
+    fill: #FFFFFF;
+}
+
+#cardfront .st8 {
+    font-size: 24px;
+}
+
+#cardfront .st9 {
+    font-size: 36.5498px;
+}
+
+#cardfront .st10 {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 300;
+}
+
+#cardfront .st11 {
+    font-size: 16.1716px;
+}
+
+#cardfront .st12 {
+    fill: #4C4C4C;
+}
+
+/* BACK OF CARD */
+#cardback .st0 {
+    fill: none;
+    stroke: #0F0F0F;
+    stroke-miterlimit: 10;
+}
+
+#cardback .st2 {
+    fill: #111111;
+}
+
+#cardback .st3 {
+    fill: #F2F2F2;
+}
+
+#cardback .st4 {
+    fill: #D8D2DB;
+}
+
+#cardback .st5 {
+    fill: #C4C4C4;
+}
+
+#cardback .st6 {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 400;
+}
+
+#cardback .st7 {
+    font-size: 27px;
+}
+
+#cardback .st8 {
+    opacity: 0.6;
+}
+
+#cardback .st9 {
+    fill: #FFFFFF;
+}
+
+#cardback .st10 {
+    font-size: 24px;
+}
+
+#cardback .st11 {
+    fill: #EAEAEA;
+}
+
+#cardback .st12 {
+    font-family: "Rock Salt", cursive;
+}
+
+#cardback .st13 {
+    font-size: 37.769px;
+}
+
+/* FLIP ANIMATION */
+.container {
+    perspective: 1000px;
+        align-items: center;
+
+}
+
+.credit-card {
+    min-width: 80%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: -webkit-transform 0.6s;
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: transform 0.6s;
+    transition: transform 0.6s, -webkit-transform 0.6s;
+    cursor: pointer;
+    position: relative;
+    margin: 0 auto;
+}
+
+.credit-card .front,
+.credit-card .back {
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    color: #47525d;
+}
+
+.credit-card .back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.credit-card.flipped {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.is-hidden--off-flow {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  z-index: -10;   /* *1* */
+  visibility: hidden;   /* *1* */
+}
+
+.is-shown--off-flow {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  visibility: visible;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-width: 350px;
+    max-width: 600px;
+    padding: 20px;
+}
+
+#ccn{
+    z-index: 0;
+}
